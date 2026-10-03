@@ -92,6 +92,7 @@ model_privacy_audit_structure.csv
 02_results_release_audit.R
 03_final_release_audit.R
 example/02_verify_app_input_ranges.R
+github_file_tree.txt
 
 
 # ------------------------------------------------------------------------------
