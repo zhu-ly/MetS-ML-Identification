@@ -481,6 +481,12 @@ Participant-level datasets are intentionally excluded to protect data privacy an
 
 ## Citation
 
-Citation information for the associated manuscript and archived repository will be added after final publication and repository archiving.
+The archived version of this repository is available on Zenodo:
+
+Zhu, Liyuan. (2026). *MetS-ML-Identification v1.0.0* (Version v1.0.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23118430
+
+DOI: 10.5281/zenodo.23118430
+
+The DOI above refers to the archived v1.0.0 release used for this repository version. The associated manuscript should be cited separately once formally published.
 
 
