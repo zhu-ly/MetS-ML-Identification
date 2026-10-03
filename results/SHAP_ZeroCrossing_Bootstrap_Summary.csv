@@ -1,0 +1,5 @@
+"Predictor","Predictor_Label","SHAP_Zero_Crossing","Original_Number_of_Crossings","Bootstrap_Median","Bootstrap_CI_Lower_2.5","Bootstrap_CI_Upper_97.5","Successful_Bootstrap_Replicates","Total_Bootstrap_Replicates","Bootstrap_Success_Rate","Multiple_Crossing_Replicates","Multiple_Crossing_Rate"
+"BMI","BMI (kg/m2)",23.5388469187289,1,23.539297759702,23.5310323671334,23.5480147318666,1000,1000,1,0,0
+"HbA1c","HbA1c (%)",6.24637720758078,1,6.24880679702559,6.24460684229936,6.25228850111633,1000,1000,1,0,0
+"UA","UA (mg/dL)",4.97281691785403,1,4.97441391330274,4.96534800371042,4.98268586802488,1000,1000,1,0,0
+"pulse","Pulse (beats/min)",76.0594132150789,1,76.0298668913972,75.9220463805341,76.1178961698546,1000,1000,1,0,0

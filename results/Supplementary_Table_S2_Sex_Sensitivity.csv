@@ -1,0 +1,3 @@
+"Model","AUC","95% CI","Brier score","DeLong P value"
+"Original CatBoost (7 predictors)","0.829","0.813–0.846","0.127",""
+"CatBoost + sex (8 predictors)","0.833","0.816–0.850","0.126","0.007"

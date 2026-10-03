@@ -1,0 +1,5 @@
+"Predictor","Predictor_Label","SHAP_Zero_Crossing","Number_of_Negative_to_Positive_Crossings","Feature_2.5th_Percentile","Feature_97.5th_Percentile"
+"BMI","BMI (kg/m2)",23.5388469187289,1,17.5483033706039,31.8213469347259
+"HbA1c","HbA1c (%)",6.24637720758078,1,4.9,8.9
+"UA","UA (mg/dL)",4.97281691785403,1,2.70000004768372,8.10000038146973
+"pulse","Pulse (beats/min)",76.0594132150789,1,55.3333333333333,96.6666666666667

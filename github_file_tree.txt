@@ -1,0 +1,151 @@
+卷 新加卷 的文件夹 PATH 列表
+卷序列号为 F668-AA28
+D:.
+|   .gitignore
+|   00_repository_audit.R
+|   01_model_privacy_audit.R
+|   02_results_release_audit.R
+|   03_final_release_audit.R
+|   github_file_tree.txt
+|   model_privacy_audit_structure.csv
+|   model_privacy_audit_summary.csv
+|   README.md
+|   repository_inventory.csv
+|   repository_text_scan.csv
+|   results_release_manifest.csv
+|   
++---app
+|       app.R
+|       
++---catboost_info
+|   |   catboost_training.json
+|   |   learn_error.tsv
+|   |   time_left.tsv
+|   |   
+|   +---learn
+|   |       events.out.tfevents
+|   |       
+|   \---tmp
++---data
+|   +---processed
+|   |       charls_final_analytic.rds
+|   |       charls_prepared_for_mets.rds
+|   |       external_validation_full.rds
+|   |       external_validation_model_data.rds
+|   |       test_set.rds
+|   |       train_set.rds
+|   |       
+|   \---raw
+|       \---CHARLS2015
++---environment
+|       00_capture_environment.R
+|       package_versions.csv
+|       sessionInfo.txt
+|       
++---example
+|       00_create_example_input.R
+|       01_verify_native_catboost_model.R
+|       02_verify_app_input_ranges.R
+|       example_input.csv
+|       predict_example.R
+|       
++---model
+|   +---locked
+|   |       model_cat.cbm
+|   |       model_cat.rds
+|   |       model_lasso.rds
+|   |       model_lgbm.rds
+|   |       model_lr.rds
+|   |       model_rf.rds
+|   |       model_xgb.rds
+|   |       
+|   +---retrained
+|   |       model_cat_retrained.rds
+|   |       model_lasso.rds
+|   |       model_lgbm.rds
+|   |       model_lr.rds
+|   |       model_rf.rds
+|   |       model_xgb.rds
+|   |       
+|   \---sensitivity
+|           model_cat_plus_sex.rds
+|           
++---results
+|       App_Input_Range_Verification.csv
+|       CatBoost_Plus_Sex_Tuning_Results.csv
+|       CatBoost_Probability_Stratification_Sensitivity.csv
+|       CatBoost_Probability_Stratification_Sensitivity_Formatted.csv
+|       CatBoost_Sensitivity_DeLong.csv
+|       CatBoost_Sensitivity_Diagnostic_Overlap.csv
+|       CatBoost_Sex_Age_Subgroup_Performance.csv
+|       CatBoost_SHAP_values.csv
+|       CatBoost_SHAP_values.rds
+|       CatBoost_testing_calibration_summary.csv
+|       CatBoost_Threshold_Sensitivity.csv
+|       CatBoost_Threshold_Sensitivity_Formatted.csv
+|       CatBoost_tuning_results.csv
+|       CatBoost_vs_LR_DeLong.csv
+|       Correlation_Key_Pairs.csv
+|       Correlation_Retained_vs_Diagnostic_Long.csv
+|       Correlation_Retained_vs_Diagnostic_Pearson.csv
+|       Correlation_Retained_vs_Diagnostic_Spearman.csv
+|       external_validation_preparation_summary.csv
+|       external_validation_summary.csv
+|       feature_selection_summary.csv
+|       Figure3_ROC_all_models.pdf
+|       Figure4_CatBoost_calibration.pdf
+|       Figure5_DCA_all_models.pdf
+|       Figure6_SHAP_summary.pdf
+|       Figure7_SHAP_dependence_top4.pdf
+|       final_predictors.csv
+|       LASSO_lambda_summary.csv
+|       LASSO_selected_features.csv
+|       LASSO_selected_feature_correlations.csv
+|       LASSO_selected_feature_correlation_heatmap.pdf
+|       LASSO_selection_plots.pdf
+|       LightGBM_tuning_results.csv
+|       locked_all_models_predictions.rds
+|       locked_train_thresholds.rds
+|       LR_Standardization_Sensitivity.csv
+|       LR_Standardization_Training_Scaling_Parameters.csv
+|       preprocessing_summary.csv
+|       selected_hyperparameters_retrained.csv
+|       Sensitivity_Adding_Sex.csv
+|       Sensitivity_Adding_Sex_DeLong.csv
+|       SHAP_global_importance.csv
+|       SHAP_importance_bar.pdf
+|       SHAP_top4_feature_pairs.rds
+|       SHAP_ZeroCrossing_Bootstrap_Summary.csv
+|       SHAP_ZeroCrossing_Original_Estimates.csv
+|       Supplementary_Table_S2_Sex_Sensitivity.csv
+|       Supplementary_Table_S3_Subgroup_Performance.csv
+|       Supplementary_Table_S6_SHAP_ZeroCrossing_Bootstrap.csv
+|       Table1_baseline_characteristics.csv
+|       Table2_train_test_characteristics.csv
+|       Table3_logistic_regression.csv
+|       Table4_all_model_performance.csv
+|       train_test_split_summary.csv
+|       VIF_results.csv
+|       XGBoost_tuning_results.csv
+|       
+\---RR
+    +---main
+    |       00_setup.R
+    |       01_prepare_charls_data.R
+    |       02_define_mets_and_complete_cases.R
+    |       03_descriptive_analysis_and_split.R
+    |       04_feature_selection.R
+    |       05_train_models.R
+    |       06_evaluate_models.R
+    |       07_shap_analysis.R
+    |       08_prepare_external_validation.R
+    |       09_external_validation.R
+    |       
+    \---sensitivity
+            01_diagnostic_overlap_sensitivity.R
+            02_lr_standardization_sensitivity.R
+            03_threshold_sensitivity.R
+            04_probability_stratification_sensitivity.R
+            05_shap_zero_crossing_bootstrap.R
+            06_sex_and_age_subgroup_analysis.R
+            

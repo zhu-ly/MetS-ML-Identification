@@ -1,0 +1,8 @@
+"Feature","Feature_with_Unit","Mean_Abs_SHAP"
+"BMI","BMI (kg/m2)",1.03954907841655
+"HbA1c","HbA1c (%)",0.372250892732968
+"UA","UA (mg/dL)",0.199006481254521
+"pulse","Pulse (beats/min)",0.150653901974531
+"age","Age (years)",0.134673764540133
+"BUN","BUN (mg/dL)",0.0961450556130126
+"TC","TC (mg/dL)",0.0795827768841521

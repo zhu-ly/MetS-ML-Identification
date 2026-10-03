@@ -1,0 +1,5 @@
+"Predictor","SHAP zero-crossing estimate","Bootstrap 95% CI","Successful bootstrap replicates"
+"BMI (kg/m2)","23.5388","23.5310–23.5480","1000/1000"
+"HbA1c (%)","6.2464","6.2446–6.2523","1000/1000"
+"UA (mg/dL)","4.9728","4.9653–4.9827","1000/1000"
+"Pulse (beats/min)","76.0594","75.9220–76.1179","1000/1000"

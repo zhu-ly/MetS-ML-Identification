@@ -1,0 +1,2 @@
+"Comparison","Dataset","AUC_CatBoost","AUC_LR","AUC_Difference","Z","P_value"
+"CatBoost vs Logistic Regression","Testing",0.829363626951138,0.822354732619386,0.00700889433175123,1.88016219224756,0.060085976575969

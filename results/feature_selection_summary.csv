@@ -1,0 +1,6 @@
+"Stage","N"
+"Initial candidate variables",20
+"Diagnostic variables excluded before LASSO",6
+"Variables entering LASSO",14
+"Nonzero predictors at lambda.1se",8
+"Predictors after collinearity assessment",7

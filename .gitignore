@@ -1,0 +1,122 @@
+# ==============================================================================
+# MetS machine-learning reproducibility repository
+# Files excluded from public version control
+# ==============================================================================
+
+
+# ------------------------------------------------------------------------------
+# 1. Raw data
+# Raw CHARLS and external-validation data must never be committed.
+# ------------------------------------------------------------------------------
+
+data/raw/**
+
+
+# ------------------------------------------------------------------------------
+# 2. Participant-level processed data
+# Derived participant-level datasets are retained locally only.
+# ------------------------------------------------------------------------------
+
+data/processed/**
+
+
+# ------------------------------------------------------------------------------
+# 3. CatBoost temporary training/log files
+# ------------------------------------------------------------------------------
+
+catboost_info/**
+
+
+# ------------------------------------------------------------------------------
+# 4. Model objects not intended for public release
+#
+# The final locked CatBoost model is explicitly retained below.
+# Other RDS model objects are excluded unless intentionally reconsidered.
+# ------------------------------------------------------------------------------
+
+model/**/*.rds
+
+!model/locked/model_cat.rds
+
+model/retrained/**
+
+model/sensitivity/**
+
+
+# ------------------------------------------------------------------------------
+# 5. Participant-level or local-only result objects
+# ------------------------------------------------------------------------------
+
+results/CatBoost_SHAP_values.csv
+results/CatBoost_SHAP_values.rds
+results/locked_all_models_predictions.rds
+results/locked_train_thresholds.rds
+results/SHAP_top4_feature_pairs.rds
+
+
+# ------------------------------------------------------------------------------
+# 6. Development / QA outputs not intended for release
+# ------------------------------------------------------------------------------
+
+results/App_Input_Range_Verification.csv
+results/selected_hyperparameters_retrained.csv
+
+
+# ------------------------------------------------------------------------------
+# 7. Redundant formatted sensitivity tables
+# Machine-readable source versions are retained instead.
+# ------------------------------------------------------------------------------
+
+results/CatBoost_Probability_Stratification_Sensitivity_Formatted.csv
+results/CatBoost_Threshold_Sensitivity_Formatted.csv
+
+
+# ------------------------------------------------------------------------------
+# 8. Local repository-audit outputs
+# ------------------------------------------------------------------------------
+
+repository_inventory.csv
+repository_text_scan.csv
+results_release_manifest.csv
+model_privacy_audit_summary.csv
+model_privacy_audit_structure.csv
+
+
+# ------------------------------------------------------------------------------
+# 9. Local audit scripts
+# These scripts were used only for pre-release privacy/repository checks.
+# ------------------------------------------------------------------------------
+
+00_repository_audit.R
+01_model_privacy_audit.R
+02_results_release_audit.R
+03_final_release_audit.R
+example/02_verify_app_input_ranges.R
+
+
+# ------------------------------------------------------------------------------
+# 10. R / RStudio local files
+# ------------------------------------------------------------------------------
+
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+*.Rproj
+
+
+# ------------------------------------------------------------------------------
+# 11. Deployment metadata / credentials
+# ------------------------------------------------------------------------------
+
+rsconnect/
+
+
+# ------------------------------------------------------------------------------
+# 12. Common operating-system temporary files
+# ------------------------------------------------------------------------------
+
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
