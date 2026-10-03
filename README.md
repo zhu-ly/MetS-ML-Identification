@@ -160,13 +160,13 @@ Prediction equivalence between the two formats was verified using the synthetic 
 
 ## Important distinction: locked models and model retraining
 
-The locked CatBoost model supplied in this repository is the model used for the reported manuscript analyses and external validation.
+The public repository distributes the final locked CatBoost model used for the reported manuscript analyses and external validation, in both RDS and native CatBoost formats.
 
-The training scripts are provided to document the model-development and tuning workflow. Exact retraining of stochastic machine-learning algorithms may depend on software versions, implementation details, and training environment.
+The training scripts are provided to document the development and tuning workflow for all six candidate models. The manuscript-level all-model comparison was locally verified using the corresponding locked manuscript model objects. Non-final locked candidate-model objects are not distributed in the public repository.
 
-In particular, rerunning the current cleaned XGBoost training workflow may produce a boosting-round selection that differs from the locked manuscript XGBoost model. Therefore, newly retrained model objects should not be interpreted as replacements for the locked manuscript models when reproducing the reported performance results.
+Exact retraining of stochastic machine-learning algorithms may depend on software versions, implementation details, and the training environment. In particular, rerunning the current cleaned XGBoost training workflow may produce a boosting-round selection that differs from the locked manuscript XGBoost model.
 
-The manuscript-level performance evaluation scripts use the locked models where required.
+Accordingly, newly retrained candidate models should not be interpreted as exact replacements for the locked objects used to obtain the reported manuscript-level all-model comparison. The supplied locked CatBoost model is the reference object for exact reuse of the reported final model.
 
 
 ## Main analysis workflow
@@ -205,7 +205,7 @@ Implements training and tuning of the six candidate models.
 
 ### `06_evaluate_models.R`
 
-Evaluates the locked models on the testing dataset and generates model-performance, discrimination, calibration, ROC, and decision-curve outputs.
+Evaluates candidate-model objects on the testing dataset and generates model-performance, discrimination, calibration, ROC, and decision-curve outputs. The manuscript-level all-model results were locally verified using the corresponding locked manuscript model objects; only the final locked CatBoost model is distributed publicly.
 
 ### `07_shap_analysis.R`
 
@@ -328,7 +328,7 @@ RR/main/05_train_models.R
 RR/main/06_evaluate_models.R
 RR/main/07_shap_analysis.R
 ```
-
+Scripts 00–05 document and reproduce the data-processing, feature-selection, and candidate-model training workflow for authorized users with access to the required source data. The manuscript-level all-model evaluation in script 06 was locally verified using the corresponding locked manuscript model objects. In a public clone, exact reproduction of the manuscript-level all-model comparison requires the corresponding local candidate-model objects or retraining. Exact reuse of the reported final model is supported by the supplied locked CatBoost RDS and CBM files.
 External-validation scripts require the non-public external-validation data:
 
 ```text
